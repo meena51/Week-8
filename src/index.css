@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.primary-nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(20, 14, 66);
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 30px; /* Align items to the right */
+}
+.primary-nav a {
+  margin-left: 30px; /* Add some space between links */
+  text-decoration: none;
+  color: white;
+}
+.home-page {
+  background-image: url('/images/Home-background2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  
+}
+.content{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.link{
+  color: black;
+  text-decoration: none;
+  background-color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  width: 200px; 
+  
+  text-align: center; 
+  
+  text-align: center; /* Center the text horizontally */
+  margin: 0 auto
+  
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-gap: 20px; /* Spacing between columns */
+}
+
+.post {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.post img.post-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .posts {
+    grid-template-columns: repeat(1, 1fr); /* One column for mobile screens */
+  }
+}
+
